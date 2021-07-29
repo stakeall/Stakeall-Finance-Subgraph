@@ -1,0 +1,25 @@
+specVersion: 0.0.2
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: Wallet
+    network: mainnet
+    source:
+      address: "0x9d4454B023096f34B160D6B654540c56A1F81688" 
+      abi: Wallet
+      startBlock: 12918372
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.4
+      language: wasm/assemblyscript
+      entities:
+        - WalletCreatedEvent
+      abis:
+        - name: Wallet
+          file: ./abis/Wallet.json
+
+      eventHandlers:
+        - event: Created(indexed address,indexed address,address)
+          handler: handleCreatedEvent
+      file: ./src/WalletMapping.ts

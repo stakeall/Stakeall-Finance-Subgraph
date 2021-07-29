@@ -1,0 +1,6 @@
+type WalletCreatedEvent @entity {
+  id: ID!
+  sender: Bytes! # address
+  owner: Bytes! # address
+  proxy: Bytes! # address
+}
