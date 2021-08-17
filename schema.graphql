@@ -1,6 +1,9 @@
-type WalletCreatedEvent @entity {
+type Account @entity {
   id: ID!
+  txHash: Bytes
+  blockTimestamp: BigInt! # uint256
   sender: Bytes! # address
   owner: Bytes! # address
-  proxy: Bytes! # address
+  account: Bytes! # address
+  origin: Bytes! # address
 }

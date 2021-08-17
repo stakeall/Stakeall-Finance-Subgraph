@@ -1,13 +1,13 @@
 {
-  "name": "stakeall",
+  "name": "app",
   "license": "UNLICENSED",
   "scripts": {
     "codegen": "graph codegen",
     "build": "graph build",
-    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ stevepro-lab/stakeall",
-    "create-local": "graph create --node http://localhost:8020/ stevepro-lab/stakeall",
-    "remove-local": "graph remove --node http://localhost:8020/ stevepro-lab/stakeall",
-    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 stevepro-lab/stakeall"
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ stakeapp/app",
+    "create-local": "graph create --node http://35.208.215.170:8020/ stakeapp/app",
+    "remove-local": "graph remove --node http://35.208.215.170:8020/ stakeapp/app",
+    "deploy-local": "graph deploy --node http://35.208.215.170:8020/ --ipfs http://35.208.215.170:5001 stakeapp/app"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.21.1",
