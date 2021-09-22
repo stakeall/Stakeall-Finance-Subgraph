@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: UserWallet
-    network: mainnet
+    network: rinkeby
     source:
-      address: "0xCD8a1C3ba11CF5ECfa6267617243239504a98d90"
+      address: "0x9Ba03617cc91AfE86EEE42946aA3AdA5226C92Ae"
       abi: UserWallet
-      startBlock: 13039949
+      startBlock: 9326780
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
