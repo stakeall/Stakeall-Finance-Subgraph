@@ -5,10 +5,11 @@
     "codegen": "graph codegen",
     "build": "graph build",
     "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ stakeapp/app",
-    "create-local": "graph create --node http://35.208.215.170:8020/ stakeall/app",
-    "remove-local": "graph remove --node http://35.208.215.170:8020/ stakeall/app",
-    "deploy-local": "graph deploy --node http://35.208.215.170:8020/ --ipfs https://api.thegraph.com/ipfs/ stakeall/app",
-    "deploy-rinkeby": "graph deploy cryptostaker2021/stakeall-finance --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
+    "create-local": "graph create --node http://95.217.30.167:8020/ stakeall/app",
+    "remove-local": "graph remove --node http://95.217.30.167:8020/ stakeall/app",
+    "deploy-local": "graph deploy --node http://95.217.30.167:8020/ --ipfs https://api.thegraph.com/ipfs/ stakeall/app",
+    "deploy-rinkeby": "graph deploy cryptostaker2021/stakeall-finance --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "deploy-rikeby-development": "graph deploy cryptostaker2021/stakeall-development --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/"
   },
   "dependencies": {
     "@graphprotocol/graph-cli": "0.21.1",
